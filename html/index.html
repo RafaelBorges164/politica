@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APOIE NOS NAS REDES SOCIAIS </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PERSONALIZE SUA FOTO</h1>
+
+        <div class="example-container">
+            <h3>Exemplo:</h3>
+            <img src="sua-foto.jpg" alt="Exemplo de marca d'água" class="example">
+        </div>
+
+        <input type="file" id="upload" accept="image/*">
+        <input type="text" id="watermark" placeholder="Digite o texto da marca d'água">
+        <button onclick="applyWatermark()">Aplicar Marca d'água</button>
+
+        <div class="result">
+            <h3>RESULTADO:</h3>
+            <canvas id="canvas"></canvas>
+            <button id="download-btn" onclick="downloadImage()" style="display:none;">Baixar Imagem</button>
+        </div>
+
+        <div class="share-link" style="display:none;">
+            <h3>Compartilhe sua candidatura:</h3>
+            <input type="text" id="shareable-link" readonly>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
