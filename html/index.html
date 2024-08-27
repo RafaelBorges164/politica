@@ -1,35 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APOIE NOS NAS REDES SOCIAIS </title>
-    <link rel="stylesheet" href="style.css">
+    <title>tela de login</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(45deg, green, yellow);
+        }
+        div{
+            background-color: rgba(0, 0, 0, 0.9);
+            position: absolute ;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 80px;
+            border-radius: 15px;
+            color: #fff;
+         }
+         input{
+            padding: 15;
+            border: none;
+            outline: none;
+            font-size: 15px;
+         }
+         button{
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+         }
+         button:hover{
+            background-color: deepskyblue;
+            cursor: pointer;
+         }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>PERSONALIZE SUA FOTO</h1>
-
-        <div class="example-container">
-            <h3>Exemplo:</h3>
-            <img src="sua-foto.jpg" alt="Exemplo de marca d'água" class="example">
-        </div>
-
-        <input type="file" id="upload" accept="image/*">
-        <input type="text" id="watermark" placeholder="Digite o texto da marca d'água">
-        <button onclick="applyWatermark()">Aplicar Marca d'água</button>
-
-        <div class="result">
-            <h3>RESULTADO:</h3>
-            <canvas id="canvas"></canvas>
-            <button id="download-btn" onclick="downloadImage()" style="display:none;">Baixar Imagem</button>
-        </div>
-
-        <div class="share-link" style="display:none;">
-            <h3>Compartilhe sua candidatura:</h3>
-            <input type="text" id="shareable-link" readonly>
-        </div>
+    <div>
+        <h1>Login</h1>
+        <input type="text" placeholder="nome">
+        <br><br>
+        <input type="password" placeholder="Senha">
+        <br><br>
+        <button>Enviar</button;>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
